@@ -1,0 +1,10 @@
+---
+title: "partner_Yuma"
+output: html_document
+---
+
+Yuma Anderson @yumaanderson, partner: Hannah Lo @halo-ds
+Last commit was intial push onto the repo
+Commit ID: 1c26188
+Knitting was successful.
+I have encountered a few difficulties with pushing to the repo.
