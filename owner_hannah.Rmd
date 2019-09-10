@@ -1,8 +1,66 @@
-Hannah Lo
+---
+     title: "Lab 1"
+     date: 2019-9-09
+     author: "Hannah Lo"
+     output: html_document
+---
+## 1. Collaborating on a Repository
 
 * Math is fun and can be creative.
 * Three Most Important Tools to Organize
-   +folders
-   +paperclips
-   +planner
+    + folders
+    + paperclips
+    + planner
 * I love playing guitar hero.
+
+## 2. Understanding Concepts 
+
+1. Git is a tool that allows you to control different revisions of your code while Github is a service that allows you to collaborate on code.
+
+2. Git can be used independently from Github. We don't use it independently because we want to be able to share our work and colaborate in this class. Using Github has many benefits other than just easy collaboration, you can also showcase your work to future employers and the code revision documentation is easy to read to name a few. However, a disadvantage is that not all of the features on Github are free and it can be difficult to get a hang of.
+
+3. A repository is a storage space where you can put your project. It can hold code, images, text, and more. You can make a repository of your current directory by this command:
+
+```
+git init
+    ```
+
+## 3. Coding Excercises 
+
+1. 
+```{r}
+X = c(47,34,33,65,37,NA,43,NA,11,NA,23,NA)
+y = sum(is.na(X))
+print(y)
+    ```
+2. 
+```{r}
+age = c(25,30,45,60,12,41)
+smoker = c('T','F','T','F','F','F')
+weight = c(120,137,0,168,91,142)
+example_data = data.frame(age,smoker,weight)
+example_data[3,3] = 150
+print(example_data)
+```
+3. 
+```{r}
+NA_ratio = function(x){
+return(mean(is.na(x)))
+}
+divide_by_total = function(x){
+  return(x / sum(x, na.rm = TRUE))
+}
+NA_ratio(X)
+divide_by_total(X)
+```
+4. 
+```{r}
+a = c(1,NA,NA,NA)
+b = c(NA,3,NA,NA)
+both_na = function(x,y){
+  df = data.frame(x,y)
+  return(nrow(subset(df, is.na(x) & is.na(y))))
+}
+both_na(a,b)
+```
+
